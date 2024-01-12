@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация(Договор)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <form>
+        <label for="contract_number" id="title">Номер договора</label>
+        <input type="text" id="contract_number" name="contract_number" placeholder="Введите номер договора">
+        <label class="status" id="status_contract_number"></label>
+        <button type="button" id="signin_button" onclick="request()">Вход</button>
+    </form>
+    <script src="main.js"></script>  
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>  
+</body>
+</html>
