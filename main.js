@@ -1,7 +1,8 @@
 let input_contract_number = document.getElementById("contract_number");
 
-// Checking empty input userkey
 function validate_contract_number() {
+    // Checking empty input contract number
+    // Onclick activation on SighIn button
     const status_contract_number = document.getElementById("status_contract_number");
     if (input_contract_number.value.trim() === "") {
         status_contract_number.innerText = "Введите номер договора";
@@ -13,9 +14,9 @@ function validate_contract_number() {
     return true;
 }
 
-
-//transfer inputs data to bot
 function request() {
+    //transfer inputs data to bot
+    // format: JSON
     const key = validate_contract_number();
     if (key) {
         let data = {
