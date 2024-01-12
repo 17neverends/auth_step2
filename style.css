@@ -9,7 +9,7 @@ body {
     justify-content: center;
     min-height: 40vh; 
     min-width: 100%;
-    overflow-y:scroll 
+    overflow-y:auto 
 }
 
 form {
@@ -77,10 +77,9 @@ input:hover {
     margin-top: 40px;
     border-radius: 10px;
     font-size: 17px;
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center; 
+    height: 50px;
+    min-height: 50px;
 }
 
 #signin_button:hover {
